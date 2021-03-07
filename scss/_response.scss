@@ -1,0 +1,42 @@
+@import "var";
+@mixin _320_452 {
+    @media (min-width: 320px) and (max-width: 452px) {
+        & {
+            flex-direction: column;
+            height: 9.5rem;
+            max-width: 100%;
+        }
+    }
+}
+
+@mixin _320_452_title {
+    @media (min-width: 320px) and (max-width: 452px) {
+        & {
+            font-family: $fontFamily;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+@mixin _320_452_btn_sq {
+    @media (min-width: 320px) and (max-width: 452px) {
+        & {
+            margin: 0 auto;
+            width: $btnRedWidthMob;
+            height: $btnRedHeightMob;
+        }
+    }
+}
+
+@mixin _320_452_btn_rg {
+    @media (min-width: 320px) and (max-width: 452px) {
+        & {
+            margin: 0 auto;
+            width: $btnOrangeWidthMob;
+            height: $btnOrangeHeighthMob;
+        }
+    }
+}

@@ -1,0 +1,208 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  background: #e5e5e5;
+}
+
+.wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 100%;
+}
+
+/*banners style*/
+.banner__square {
+  position: relative;
+  width: 100%;
+  max-width: 672px;
+  height: 5rem;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+.banner__square__index {
+  position: absolute;
+  top: -24px;
+  right: 0;
+  color: #868686;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+}
+.banner__square__title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 16px 20px;
+  color: #212121;
+}
+@media (min-width: 320px) and (max-width: 452px) {
+  .banner__square__title {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.banner__square__title__red {
+  color: #ff7e4a;
+  font-weight: bolder;
+}
+.banner__square__button {
+  margin: 16px 24px;
+  margin-left: auto;
+  min-width: 156px;
+  height: 44px;
+  background: #ff7e4a;
+  border: none;
+  border-radius: 22px;
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  -ms-border-radius: 22px;
+  -o-border-radius: 22px;
+  color: white;
+}
+@media (min-width: 320px) and (max-width: 452px) {
+  .banner__square__button {
+    margin: 0 auto;
+    width: 145px;
+    height: 40px;
+  }
+}
+.banner__square__button:focus, .banner__square__button:active {
+  outline: none;
+}
+.banner__square__button:hover {
+  cursor: pointer;
+}
+@media (min-width: 320px) and (max-width: 452px) {
+  .banner__square {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 9.5rem;
+    max-width: 100%;
+  }
+}
+
+.banner__rectangular {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  height: 80px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  margin-bottom: 15px;
+}
+.banner__rectangular__index {
+  position: absolute;
+  bottom: -28px;
+  right: 0;
+  color: #868686;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+}
+.banner__rectangular__title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 16px 20px;
+  color: #212121;
+}
+@media (min-width: 320px) and (max-width: 452px) {
+  .banner__rectangular__title {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.banner__rectangular__title__orange {
+  color: #f7b100;
+  font-weight: bolder;
+}
+.banner__rectangular__button {
+  margin: 16px 24px;
+  margin-left: auto;
+  width: 159px;
+  height: 48px;
+  background: #f7b100;
+  border: none;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  color: white;
+}
+@media (min-width: 320px) and (max-width: 452px) {
+  .banner__rectangular__button {
+    margin: 0 auto;
+    width: 124px;
+    height: 36px;
+  }
+}
+.banner__rectangular__button:focus, .banner__rectangular__button:active {
+  outline: none;
+}
+.banner__rectangular__button:hover {
+  cursor: pointer;
+}
+@media (min-width: 320px) and (max-width: 452px) {
+  .banner__rectangular {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 9.5rem;
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

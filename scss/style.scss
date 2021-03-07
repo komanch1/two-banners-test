@@ -1,0 +1,149 @@
+@import "var";
+@import "response";
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// html {
+//     overflow: hidden;
+// }
+body,
+html {
+    width: 100%;
+    max-width: 100%;
+}
+body {
+    background: #e5e5e5;
+}
+.wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
+    max-width: 100%;
+}
+/*banners style*/
+.banner__square {
+    position: relative;
+    width: 100%;
+    max-width: $widthBanerRed;
+    height: 5rem;
+    background: #fff;
+    display: flex;
+    margin-bottom: 15px;
+    &__index {
+        position: absolute;
+        top: -24px;
+        right: 0;
+        color: $colorGrey;
+        font-family: $fontFamily;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    &__title {
+        font-family: $fontFamily;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 16px 20px;
+        color: $colorBlack;
+        @include _320_452_title;
+        &__red {
+            color: $colorRed;
+            font-weight: bolder;
+        }
+    }
+    &__button {
+        margin: 16px 24px;
+        margin-left: auto;
+        min-width: $btnRedWidthDesc;
+        height: $btnRedHeightDesc;
+        background: $colorRed;
+        border: none;
+        border-radius: $btnRedRadius;
+        -webkit-border-radius: $btnRedRadius;
+        -moz-border-radius: $btnRedRadius;
+        -ms-border-radius: $btnRedRadius;
+        -o-border-radius: $btnRedRadius;
+        color: white;
+        @include _320_452_btn_sq;
+    }
+    &__button:focus,
+    &__button:active {
+        outline: none;
+    }
+    &__button:hover {
+        cursor: pointer;
+    }
+    @include _320_452;
+}
+// ---
+.banner__rectangular {
+    position: relative;
+    width: 100%;
+    max-width: $widthBanerOrange;
+    height: $heightBanerOrange;
+    background: #fff;
+    display: flex;
+    border-radius: $btnOrangeRadius;
+    -webkit-border-radius: $btnOrangeRadius;
+    -moz-border-radius: $btnOrangeRadius;
+    -ms-border-radius: $btnOrangeRadius;
+    -o-border-radius: $btnOrangeRadius;
+    margin-bottom: 15px;
+    &__index {
+        position: absolute;
+        bottom: -28px;
+        right: 0;
+        color: $colorGrey;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    &__title {
+        font-family: $fontFamily;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 16px 20px;
+        color: $colorBlack;
+        @include _320_452_title;
+        &__orange {
+            color: $colorOrange;
+            font-weight: bolder;
+        }
+    }
+    &__button {
+        margin: 16px 24px;
+        margin-left: auto;
+        width: $btnOrangeWidthDesc;
+        height: $btnOrangeHeighthDesc;
+        background: $colorOrange;
+        border: none;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        color: white;
+        @include _320_452_btn_rg;
+    }
+    &__button:focus,
+    &__button:active {
+        outline: none;
+    }
+    &__button:hover {
+        cursor: pointer;
+    }
+    @include _320_452;
+}
